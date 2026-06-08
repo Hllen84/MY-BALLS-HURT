@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dp4cvnugp3tev"
+path="res://.godot/imported/SpotiDownloader.com - Glorious Morning 2 - Waterflame.mp3-3b0a52458b67ffe82998c22459857882.mp3str"
+
+[deps]
+
+source_file="res://SpotiDownloader.com - Glorious Morning 2 - Waterflame.mp3"
+dest_files=["res://.godot/imported/SpotiDownloader.com - Glorious Morning 2 - Waterflame.mp3-3b0a52458b67ffe82998c22459857882.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=177.0
+bpm=0.0
+beat_count=0
+bar_beats=4

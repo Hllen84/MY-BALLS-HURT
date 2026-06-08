@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bb8oma1q1frxe"]
+
+[ext_resource type="Texture2D" uid="uid://ctiswmw3rvr4w" path="res://ball.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://chtwyq01w0l6v" path="res://player.gd" id="1_i3pqv"]
+[ext_resource type="Script" uid="uid://cc4547xspnudh" path="res://balancer.gd" id="2_onrkg"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_onrkg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7mycd"]
+radius = 16.0
+
+[node name="player" type="RigidBody2D" unique_id=1383832483 groups=["Player"]]
+mass = 0.5
+physics_material_override = SubResource("PhysicsMaterial_onrkg")
+script = ExtResource("1_i3pqv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1103766313]
+texture_filter = 1
+texture_repeat = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1416113093]
+shape = SubResource("CircleShape2D_7mycd")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1878190197]
+unique_name_in_owner = true
+target_position = Vector2(0, 20)
+script = ExtResource("2_onrkg")
